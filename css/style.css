@@ -16,6 +16,7 @@ body{
     display: inline-block;
     color: black;
     vertical-align: center;
+    
 }
 
 #header h1 {
@@ -26,13 +27,13 @@ body{
     width: 70px;
 }
 
-#header ul {
+#header nav {
     float: right;
     margin-top: 25px;
     margin-left: 25px;
 }
 
-#header ul li {
+#header nav ul li {
     width: 120px;
     text-align: center;
 }
@@ -43,9 +44,92 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: #ffffff;
+    font-weight: bold;
     height: 500px;
+}
+
+#banner h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#banner button {
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: none;
+    padding:20px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 40px;
+}
+
+#banner button:hover, .imgBox button:hover{
+    background-color: purple;
+    color: white;
+    cursor: pointer;
 }
 
 #banner p {
     padding-top: 240px;
+}
+#banner section {
+    overflow: none;
+}
+
+footer{
+    background-color: #5f4a90;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.imgBox {
+    background-color: red;
+    width: 327px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+    background-size: cover;
+    text-align: center;
+}
+
+.imgBox button{
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: none;
+    padding:10px;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+
+.galeria section {
+    overflow: hidden;
+
+}
+.galeria{
+    overflow: hidden;
+    margin: 0 auto;
+    /* background: black; */
+    width: 1101px;
+    text-align: center;
+}
+
+#box1{
+    background-image: url(../img/product-1.jpg);
+}
+#box2{
+    background-image: url(../img/product-2.jpg);
+}
+#box3{
+    background-image: url(../img/product-3.jpg);
+}
+#box4{
+    background-image: url(../img/product-4.jpg);
+}
+#box5{
+    background-image: url(../img/product-5.jpg);
+}
+#box6{
+    background-image: url(../img/product-6.jpg);
 }
