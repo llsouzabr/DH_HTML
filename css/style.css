@@ -133,3 +133,20 @@ footer{
 #box6{
     background-image: url(../img/product-6.jpg);
 }
+
+#contact form{
+    width: 500px;
+    text-align: center;
+    border-style: groove;
+    background-color: rgba(255,255,255,0.8);
+    
+}
+#contact *{
+    text-align: center;
+    padding: 10px;
+}
+
+#contact input textarea{
+    border-radius: 5px;
+    border-color: gray;
+}
