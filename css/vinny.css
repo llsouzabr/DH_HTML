@@ -1,128 +1,112 @@
-body{
-    margin: 67px 0 0 0;
+/*
+width,
+height,
+display: inline-block,
+margin,
+padding,
+
+
+*/
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 75px 0 0 0;
 }
 
-/* img,h1,ul,li {
-    display: inline-block;
-    color: black;
-} */
-
 #header {
-    border-bottom: 1px solid black;
-    background-color: #ffffff;
+    border-bottom: 1px solid;
+    background-color: #fff;
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 99;
-    height: 67px;
+    z-index: 999;
 }
 
 #header * {
     display: inline-block;
-    color: black;
-    vertical-align: center;
-    
 }
 
 #header h1 {
     font-size: 16px;
-    position: relative;
-    bottom: 17px;
 }
 
 #header img {
     width: 70px;
 }
 
-#header nav {
+#header ul {
     float: right;
-    /* margin-top: 25px;
-    margin-left: 25px; */
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
-#header nav ul li {
+#header ul li {
     width: 120px;
     text-align: center;
 }
 
 #banner {
     text-align: center;
+    height: 500px;
     background-image: url('../img/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    color: #ffffff;
+    color:#fff;
     font-weight: bold;
-    height: 500px;
 }
 
-#banner h2 {
+#banner h2{
     font-size: 35px;
     text-transform: uppercase;
 }
 
-#banner button {
-    text-transform: uppercase;
-    background-color: #ffffff;
+#banner button{
+    background-color: #fff;
     border: none;
-    padding:20px;
-    font-weight: 400;
+    text-transform: uppercase;
+    padding: 20px;
     font-size: 20px;
-    border-radius: 40px;
+    font-weight: 400;
+    border-radius: 50px;
 }
 
-#banner button:hover, .imgBox button:hover{
+#banner button:hover, .box button:hover{
     background-color: purple;
-    color: white;
+    color: #fff;
     cursor: pointer;
 }
 
 #banner p {
     padding-top: 240px;
 }
-#banner section {
-    overflow: none;
+
+.contact{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    padding: 40px;
+}
+footer {
+    background-color: #5f4a90;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0 5px 0;
 }
 
-footer{
-    background-color: #5f4a90;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-}
-.imgBox {
-    width: 320px;
+.box {
+    width: 327px;
     height: 300px;
     float: left;
     margin: 20px;
     background-size: cover;
-    text-align: center;
-    position: relative;
 }
 
-.imgBox button{
-    text-transform: uppercase;
-    background-color: #ffffff;
+.box button{
+    background-color: #fff;
     border: none;
-    padding:10px;
-    font-weight: 600;
-    font-size: 10px;
-    position: relative;
-    top: 240px;
-}
-
-
-.galeria section {
-    overflow: hidden;
-
-}
-.galeria{
-    overflow: hidden;
-    margin: 0 auto;
-    /* background: black; */
-    width: 1101px;
-    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    
 }
 
 #box1{
@@ -144,26 +128,29 @@ footer{
     background-image: url(../img/product-6.jpg);
 }
 
-/* css do contact */
-.contact {
-    background-image: url(../img/bg.jpg);
-    padding: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
+section{
+    overflow: hidden;
+    text-align: center;
+}
+
+.linha{
+    width: 1104px;
+    margin: 0 auto;
 
 }
+/* css do formulario */
 
 #form-contact *{
     display: block;
 }
-#form-contact {
-    
+
+#form-contact{
     border: 1px solid;
     border-radius: 10px;
     width: 35%;
-    margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff7a;
+    margin: 0 auto;
+    background-color: #ffffffd6;
     position: relative;
 }
 
@@ -173,42 +160,33 @@ footer{
 
 #form-contact input, textarea{
     width: 100%;
-    border: 1px solid #6a5990;
     height: 25px;
+    margin: 10px 0;
     border-radius: 30px;
-    margin: 10px 0 10px 0;
-    
+    border: 1px solid #6a5990;
 }
 
 #form-contact textarea{
     height: 120px;
 }
 
-input#noName {
+input#dados{
     display: inline-block;
-    width: 5%;
-
-}
-#form-contact label[for="noName"]{
-    display:inline-block;
+    width:5%;
 }
 
-#form-contact button {
+#form-contact label[for="dados"]{
+    display: inline-block
+}
+
+#form-contact button{
     display: inline-block;
     background-color: purple;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
     font-size: 20px;
-    padding: 5px 20px 5px 20px;
+    padding: 10px 30px 10px 30px;
     border-radius: 50px;
     position: absolute;
-    right: 5px;
-    bottom: 20px;
-
-}
-
-@media(max-width:414px){
-    header{
-        background-color: red;
-    }
+    right: 10px;
 }
